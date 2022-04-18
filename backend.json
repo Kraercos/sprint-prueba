@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "a48c3ed4-45c6-41f5-9739-7fafafb33c88",
+		"name": "Reto-Etapa1-BackEnd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Marca LocalHost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Marca LocalHost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre_marca\": \"Mazda\",\r\n    \"activa\": \"si\",\r\n    \"descripcion\": \"Trabajo entre ingenieria y artesania nlknqdnoidnoinwqindldnindlqnwdndiqndlqwdinqwndqwnwdpqwndinqw\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Marca LocalHost",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/marca/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"marca",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Marca LocalHost",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activa\": \"no\",\r\n    \"descripcion\": \"confiable\",\r\n    \"nombre_marca\": \"chevrolet\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/marca/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"marca",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Marca LocalHost",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activa\": \"si\",\r\n    \"descripcion\": \"confiable\",\r\n    \"nombre_marca\": \"chevrolet\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/marca/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"marca",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Linea LocalHost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/linea",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"linea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Linea Localhost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"activa\": \"si\",\r\n        \"descripcion\": \"la mas bonita\",\r\n        \"id_marca\": 2,\r\n        \"nombre_linea\": \"i 10\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/linea",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"linea"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
